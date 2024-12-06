@@ -193,18 +193,57 @@
   document.addEventListener("scroll", navmenuScrollspy);
 })();
 
+/*--------------------------------------------------------------
+# WHATSAPP
+--------------------------------------------------------------*/
+
 (function () {
   "use strict";
 
   const whatsappIcon = document.getElementById("whatsapp-icon");
 
+  // Tampilkan atau sembunyikan ikon WhatsApp saat scroll
   function toggleWhatsappIcon() {
     if (window.scrollY > 100) {
-      whatsappIcon.classList.add("active"); // Menambahkan animasi muncul
+      whatsappIcon.classList.add("active");
     } else {
-      whatsappIcon.classList.remove("active"); // Menyembunyikan ikon
+      whatsappIcon.classList.remove("active");
     }
   }
+
+  // Redirect ke WhatsApp dengan form template
+  whatsappIcon.addEventListener("click", () => {
+    const messageTemplate = `
+Halo, saya tertarik untuk menggunakan layanan pembuatan website. Berikut informasi yang diperlukan:
+
+1. *Nama Lengkap*: [Tulis Nama Anda]
+2. *Email*: [Tulis Email Anda]
+3. *Nomor WhatsApp*: [Tulis Nomor WhatsApp Anda]
+
+4. *Jenis Website* (silakan pilih satu atau lebih jenis website yang Anda butuhkan, dengan mengetikkan angka di depannya):
+   1 Personal Branding 
+   2 Promosi Produk 
+   3 Promosi Jasa 
+   4 Landing Page 
+
+   Contoh pengisian: 1, 3 (Jika memilih Personal Branding dan Promosi Jasa).
+
+5. *Deskripsi Kebutuhan*: 
+   - Jelaskan tujuan pembuatan setiap jenis website, fitur yang diinginkan, atau referensi desain (jika ada).
+   - Contoh: 
+     - 1 Untuk profil pribadi dan portofolio, dengan desain minimalis.
+     - 3 Untuk memperkenalkan layanan konsultasi, dengan formulir pemesanan.
+
+Mohon panduan lebih lanjut untuk langkah selanjutnya. Terima kasih!
+    `;
+
+    const whatsappLink = `https://wa.me/6285811091913?text=${encodeURIComponent(
+      messageTemplate
+    )}`;
+
+    // Redirect ke WhatsApp
+    window.open(whatsappLink, "_blank");
+  });
 
   // Event listener untuk scroll dan load
   document.addEventListener("scroll", toggleWhatsappIcon);
