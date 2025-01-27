@@ -221,7 +221,7 @@
     Mohon kirimkan detail berikut:
     1. Estimasi biaya pembuatan.
     2. Perkiraan waktu pengerjaan.
-    3. Contoh website (jika tersedia).
+    3. Contoh website.
 
     Kami menantikan respons. Terima kasih atas perhatian yang diberikan.
     `;
