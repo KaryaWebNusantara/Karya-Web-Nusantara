@@ -216,7 +216,7 @@
     const messageTemplate = `
     Halo,
     
-    Kami tertarik untuk memperoleh informasi lebih lanjut mengenai layanan pembuatan website yang ditawarkan.
+  Kami tertarik untuk memperoleh informasi lebih lanjut mengenai layanan pembuatan website yang ditawarkan.
     
     Mohon kirimkan detail berikut:
     1. Estimasi biaya pembuatan.
