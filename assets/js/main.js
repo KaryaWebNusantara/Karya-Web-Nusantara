@@ -214,28 +214,18 @@
   // Redirect ke WhatsApp dengan form template
   whatsappIcon.addEventListener("click", () => {
     const messageTemplate = `
-Halo, saya tertarik untuk menggunakan layanan pembuatan website. Berikut informasi yang diperlukan:
+Halo!  
 
-1. *Nama Lengkap*: [Tulis Nama Anda]
-2. *Email*: [Tulis Email Anda]
-3. *Nomor WhatsApp*: [Tulis Nomor WhatsApp Anda]
+Saya tertarik untuk mengetahui lebih lanjut tentang layanan pembuatan website yang Anda tawarkan.  
 
-4. *Jenis Website* (silakan pilih satu atau lebih jenis website yang Anda butuhkan, dengan mengetikkan angka di depannya):
-   1 Personal Branding 
-   2 Promosi Produk 
-   3 Promosi Jasa 
-   4 Landing Page 
+Boleh saya minta informasi mengenai:  
+1. Jenis website yang tersedia.  
+2. Estimasi biaya pembuatan.  
+3. Waktu pengerjaan.  
+4. Portofolio (jika ada).  
 
-   Contoh pengisian: 1, 3 (Jika memilih Personal Branding dan Promosi Jasa).
-
-5. *Deskripsi Kebutuhan*: 
-   - Jelaskan tujuan pembuatan setiap jenis website, fitur yang diinginkan, atau referensi desain (jika ada).
-   - Contoh: 
-     - 1 Untuk profil pribadi dan portofolio, dengan desain minimalis.
-     - 3 Untuk memperkenalkan layanan konsultasi, dengan formulir pemesanan.
-
-Mohon panduan lebih lanjut untuk langkah selanjutnya. Terima kasih!
-    `;
+Terima kasih! Saya menunggu respons Anda. 😊  
+`;
 
     const whatsappLink = `https://wa.me/6285811091913?text=${encodeURIComponent(
       messageTemplate
