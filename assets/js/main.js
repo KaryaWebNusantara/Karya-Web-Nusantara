@@ -214,18 +214,18 @@
   // Redirect ke WhatsApp dengan form template
   whatsappIcon.addEventListener("click", () => {
     const messageTemplate = `
-Halo!  
-
-Saya tertarik untuk mengetahui lebih lanjut tentang layanan pembuatan website yang Anda tawarkan.  
-
-Boleh saya minta informasi mengenai:  
-1. Jenis website yang tersedia.  
-2. Estimasi biaya pembuatan.  
-3. Waktu pengerjaan.  
-4. Portofolio (jika ada).  
-
-Terima kasih! Saya menunggu respons Anda. 😊  
-`;
+    Halo,  
+    
+    Kami tertarik untuk memperoleh informasi lebih lanjut mengenai layanan pembuatan website yang ditawarkan.  
+    
+    Mohon kirimkan detail berikut:  
+    1. Estimasi biaya pembuatan.  
+    2. Perkiraan waktu pengerjaan.  
+    3. Contoh website  
+    
+    Kami menantikan respons. Terima kasih atas perhatian yang diberikan. 
+    
+    `;
 
     const whatsappLink = `https://wa.me/6285811091913?text=${encodeURIComponent(
       messageTemplate
