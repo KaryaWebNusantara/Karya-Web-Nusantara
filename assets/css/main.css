@@ -994,6 +994,17 @@ section,
   .hero .btn-watch-video {
     font-size: 13px;
   }
+
+  .hero-img {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+
+  .hero-img.animate-down {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*--------------------------------------------------------------
